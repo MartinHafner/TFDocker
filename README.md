@@ -8,7 +8,7 @@ sudo docker pull tensorflow/tensorflow:latest-devel-py3
 ```
 Den Container starten (ohne --rm falls er nach dem Beenden weiter existieren soll) 
 ```bash
-sudo docker run -it --rm --name myWorkstation1 tensorflow/tensorflow:latest-devel-py3 jupyter notebook --allow-root
+sudo docker run -it -p 8888:8888 --rm --name myWorkstation1 tensorflow/tensorflow:latest-devel-py3 jupyter notebook --allow-root
 ```
 >Den Link der erstellt wurde kopieren und im Browser aufrufen  
 
